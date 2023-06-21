@@ -6,5 +6,3 @@
 - rm
 - wild card
 - cat
-- >
-- >>

@@ -1,0 +1,170 @@
+    1  exit
+    2  ls
+    3  ls -a
+    4  ls -l
+    5  ls -la
+    6  ls /
+    7  ls /usr
+    8  pwd
+    9  cd /root
+   10  pwd
+   11  cd usr
+   12  ls
+   13  cd /usr
+   14  cd /home
+   15  mkdir test1
+   16  ls
+   17  midir test2/test3
+   18  midir -p test2/test3
+   19  mkdir -p test2/test3
+   20  ls
+   21  ls /test2
+   22  ls ./test2
+   23  cd /home
+   24  touch test1/index.php
+   25  ls test1
+   26  cd /home/test1 && ls
+   27  cd /home/test1
+   28  cp index.php copy.php
+   29  ls
+   30  cd /home
+   31  cp -r test1 test4
+   32  ls
+   33  ls test4
+   34  cd /home
+   35  mv test2/test3 test3
+   36  ls
+   37  cd /home
+   38  ls
+   39  ls /test1
+   40  ls /home/test1
+   41  ls /home/test2
+   42  ls /home/test3
+   43  ls /home/test4
+   44  cd /home
+   45  mv test4 test1_copy
+   46  ls
+   47  cd /home
+   48  ls test1
+   49  rm test1/copy.php
+   50  ls test1
+   51  cd /home
+   52  ls
+   53  rm -r test3
+   54  ls
+   55  cd /home
+   56  ls test1_copy
+   57  rm test1_copy/*.php
+   58  cat README.md
+   59  cd /home
+   60  echo '#Hello World' > README.md
+   61  cat README.md
+   62  echo 'Linux Practice' >> README.md
+   63  echo '-----------------' >> README.md
+   64  cat README.md
+   65  vi
+   66  vi README.md
+   67  cat README.md
+   68  cd /root
+   69  mkdir server_lesson && cd server_lesson
+   70  yum update -y && yum -y install git
+   71  git version
+   72  git init
+   73  touch first.txt
+   74  ls
+   75  cat first.txt
+   76  git branch
+   77  git log
+   78  mkdir server_lesson/linux_practice1
+   79  mkdir linux_practice1
+   80  mkdir linux_practice1/public
+   81  touch linux_practice1/public/index.php
+   82  ls
+   83  ls linux_practice1
+   84  ls linux_practice1/public
+   85  cp linux_practice1/public/index.php linux_practice1/public/index_bk.php
+   86  ls linux_practice1/public
+   87  cp -r linux_practice1/public linux_practice1/tmp
+   88  ls
+   89  ls linux_practice1
+   90  ls linux_practice1/tmp
+   91  rm linux_practice1/tmp/index_bk.php
+   92  ls linux_practice1/tmp
+   93  touch README.md
+   94  vi README.md
+   95  cat README.md
+   96  ls linux_practice1
+   97  ls linux_practice1/public
+   98  ls linux_practice1/tmp
+   99  mkdir linux_practice2/documents
+  100  mkdir -p linux_practice2/documents
+  101  ls linux_practice2
+  102  touch linux_practice2/documents/gizumo{01..50}.md
+  103  ls linux_practice2/documents
+  104  mkdir linux_practice2/trash
+  105  ls linux_practice2/documents | grep gizumo
+  106  ls linux_practice2/documents | grep gizumo{20..40}.md
+  107  ls linux_practice2/documents | grep gizumo{20..40}
+  108  ls linux_practice2/documents | grep gizumo20.md
+  109  ls linux_practice2/documents | grep gizumo{20..40}.md
+  110  ls linux_practice2/documents | grep gizumo{20-40}.md
+  111  ls linux_practice2/documents | -e grep gizumo{20-40}.md
+  112  ls linux_practice2/documents | grep -e gizumo{20-40}.md
+  113  ls linux_practice2/documents | grep -E gizumo{20-40}.md
+  114  ls linux_practice2/documents | grep -E gizumo[20-40].md
+  115  ls linux_practice2/documents | grep -E '[20-40]'
+  116  ls linux_practice2/documents | grep -E '([20-40])'
+  117  ls linux_practice2/documents | grep '([20-40])'
+  118  ls linux_practice2/documents | grep [20-40]
+  119  ls linux_practice2/documents | grep [20]
+  120  ls linux_practice2/documents | grep 20
+  121  ls linux_practice2/documents | grep {20}
+  122  ls linux_practice2/documents | grep 2[0-9]
+  123  ls linux_practice2/documents | grep -e 2[0-9]
+  124  ls linux_practice2/documents | grep -e 2[0-9] -e 3[0-9]
+  125  ls linux_practice2/documents | grep -e 2[0-9] -e 3[0-9] -e 40
+  126  ls
+  127  ls linux_practice2/trash
+  128  ls linux_practice2
+  129  ls linux_practice2/documents | grep -e 2[0-9] -e 3[0-9] -e 40 | xargs mv linux_practice2/trash
+  130  ls linux_practice2/documents | grep -e 2[0-9] -e 3[0-9] -e 40 
+  131  ls linux_practice2/documents
+  132* 
+  133* 
+  134  ls linux_practice2/documents | grep -e 2[0-9] -e 3[0-9] -e 40 
+  135  ls linux_practice2/trash 
+  136  mv linux_practice2/documents/gizumo{20..40}.md linux_practice2/trash 
+  137  mv linux_practice2/documents/gizumo{21..40}.md linux_practice2/trash 
+  138  ls linux_practice2/documents 
+  139  ls linux_practice2/trash
+  140  cd linux_practice2
+  141  ls
+  142  cd documents
+  143  ls
+  144  cd ..
+  145  cd trash
+  146  ls
+  147  cd ../../
+  148  ls
+  149  ls
+  150  touch linux_practice2 .gitignore
+  151  ls linux_practice2
+  152  ls
+  153  ls linux_pracitice2
+  154  ls linux_practice2
+  155  ls -a linux_practice2
+  156  ls -a
+  157  rm .gitignore
+  158  ls -a
+  159  cd linux_practice2
+  160  ls
+  161  .gitignore
+  162  touch .gitignore
+  163  vi linux_practice2/.gitignore
+  164  ls -a linux_practice2
+  165  ls -a
+  166  vi .gitignore
+  167  cat .gitignore
+  168  cd ..
+  169  ls
+  170  history 300 > linux_practice2/exec_command.log

@@ -1,0 +1,10 @@
+- ls
+- pwd
+- cd
+- cp
+- mv
+- rm
+- wild card
+- cat
+- >
+- >>
